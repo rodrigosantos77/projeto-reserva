@@ -1,0 +1,69 @@
+/*criando os medias queries */
+
+/*criando os medias queries  tamanho tablet*/
+
+/*
+@media only screen and (min-width: 768px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%; /* Ocupa toda a largura 
+        height: 400px;
+        object-fit: cover; /* Para manter o aspecto sem distorção 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%; /* Garantindo que ocupe toda a largura 
+        height: 400px;
+        object-fit: cover; /* Para ajustar o recorte da imagem 
+    }
+}
+*/
+
+/* Dispositivos pequenos (telas com largura menor que 768px) */
+@media only screen and (max-width: 767px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%; /* Imagem ocupa toda a largura */
+        height: auto; /* Ajusta a altura automaticamente mantendo a proporção */
+        object-fit: cover; /* Garante que a imagem não seja distorcida */
+        max-height: 300px; /* Limita a altura em dispositivos pequenos */
+    }
+}
+
+/* Tamanho tablet (telas entre 768px e 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+/* Tamanho médio (telas entre 992px e 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+/* Tamanho grande (telas maiores que 1200px) */
+@media only screen and (min-width: 1200px) {
+    .carousel .carousel-inner .carousel-item .carousel-item-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+
+
+
